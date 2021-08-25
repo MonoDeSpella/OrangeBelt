@@ -134,3 +134,10 @@ def play(word):
         print('Gratz! You-ve guessed the right word')
     else:
         print('Unlucky! That was ' + word + '. Better luck next time')
+        
+again = 'y'
+#ofc we need this one block to our game work correctly
+while again.lower() == 'y':
+    word = get_word()
+    play(word)
+    again = input('Again? (y = yes, n = no):')
